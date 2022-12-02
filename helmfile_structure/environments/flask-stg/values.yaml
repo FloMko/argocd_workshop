@@ -1,5 +1,5 @@
 env:
-  - name: ARGO_ENV
+  - name: ARGO_ENV_1
     value: stg
   - name: ARGO_ENV_2
     value: stg
