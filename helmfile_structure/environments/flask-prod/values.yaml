@@ -1,7 +1,7 @@
 env:
   - name: ARGO_ENV
     value: prod
-  - name: ARGO_ENV
+  - name: ARGO_ENV_2
     value: prod
-  - name: ARGO_ENV
+  - name: ARGO_ENV_3
     value: default

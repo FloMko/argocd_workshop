@@ -1,7 +1,7 @@
 env:
   - name: ARGO_ENV
     value: stg
-  - name: ARGO_ENV2
+  - name: ARGO_ENV_2
     value: stg
-  - name: ARGO_ENV3
+  - name: ARGO_ENV_3
     value: default
