@@ -60,10 +60,10 @@ argocd login 127.0.0.1:8080 --username admin --password saBhvGSXFCylTfvU --insec
 
 
 
-argocd app create flask --repo https://github.com/FloMko/argocd_workshop.git --path helmfile_structure --revision HEAD --dest-server https://kubernetes.default.svc --server 127.0.0.1:8080 --insecure 
+argocd app create flask --repo https://github.com/FloMko/argocd_workshop.git --path helmfile_structure --revision HEAD --dest-server https://kubernetes.default.svc --server 127.0.0.1:8080 --insecure --dest-namespace flask-app-1
 
 
 argocd app create trivy-operator --repo https://github.com/aquasecurity/trivy-operator.git --path deploy/helm --revision HEAD --dest-server https://kubernetes.default.svc --dest-namespace trivy-operator --server 127.0.0.1:8080 --insecure 
 
+ kubectl apply -f example.yaml 
 
-https://github.com/aquasecurity/trivy-operator.git
