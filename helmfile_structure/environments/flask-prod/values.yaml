@@ -2,6 +2,6 @@ env:
   - name: ARGO_ENV_1
     value: prod
   - name: ARGO_ENV_2
-    value: prod
+    value: flask22
   - name: ARGO_ENV_3
     value: default

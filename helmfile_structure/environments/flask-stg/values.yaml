@@ -5,3 +5,5 @@ env:
     value: stg
   - name: ARGO_ENV_3
     value: default
+image:
+  tag: "0.0.3"
