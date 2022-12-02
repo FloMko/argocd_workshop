@@ -1,0 +1,17 @@
+templates:
+  default: &default
+    missingFileHandler: Warn
+    values:
+    - environments/{{`{{ .Environment.Name }}`}}/values.yaml
+    - environments/{{`{{ .Release.Name }}`}}/values.yaml
+
+
+releases:
+    - name: flask-prod
+      chart: ../packaging/charts/flask-app
+      namespace: flask-prod
+      <<: *default
+    - name: flask-stg
+      chart: ../packaging/charts/flask-app
+      namespace: flask-stg
+      <<: *default

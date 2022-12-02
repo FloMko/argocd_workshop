@@ -1,0 +1,7 @@
+env:
+  - name: env1
+    value: default
+  - name: env2
+    value: default
+  - name: env3
+    value: default
